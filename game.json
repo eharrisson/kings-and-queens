@@ -7,7 +7,7 @@
     "revision": 0
   },
   "properties": {
-    "adaptGameResolutionAtRuntime": true,
+    "adaptGameResolutionAtRuntime": false,
     "folderProject": false,
     "orientation": "landscape",
     "packageName": "com.example.gamename",
@@ -21,8 +21,8 @@
     "name": "Kings and Queens",
     "description": "",
     "author": "",
-    "windowWidth": 800,
-    "windowHeight": 600,
+    "windowWidth": 1024,
+    "windowHeight": 640,
     "latestCompilationDirectory": "",
     "maxFPS": 60,
     "minFPS": 20,
@@ -884,6 +884,15 @@
         "name": "NewSprite2-30.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewFile-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewFile-1.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -915,7 +924,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 1,
+        "zoomFactor": 0.8833999999999996,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -923,48 +932,60 @@
       "instances": [
         {
           "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Shield",
+          "persistentUuid": "06e28341-cd57-43f4-b3c6-0ad881abb0cc",
+          "width": 0,
+          "x": 256,
+          "y": 480,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
           "customSize": true,
           "height": 64,
           "layer": "",
-          "locked": false,
           "name": "Sword",
-          "persistentUuid": "b0b8b9b1-685b-4221-aca5-43643c83b338",
+          "persistentUuid": "ab586177-609b-4d3a-b49f-a3b1dfd5c658",
           "width": 64,
+          "x": 384,
+          "y": 480,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Shield",
+          "persistentUuid": "1aac09ad-1fb3-4df6-b06b-19bd029017c2",
+          "width": 0,
+          "x": 256,
+          "y": 544,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 320,
+          "layer": "",
+          "name": "backgroundgrid",
+          "persistentUuid": "e66618bd-63b3-4933-9566-821a458cd956",
+          "width": 320,
           "x": 352,
           "y": 288,
           "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "NewSprite",
-          "persistentUuid": "60bcd13a-20af-41a5-96b3-83deedfb89c8",
-          "width": 0,
-          "x": 416,
-          "y": 288,
-          "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "NewSprite2",
-          "persistentUuid": "6ce4c058-d2f4-43d2-9298-cc6f8a45ac42",
-          "width": 0,
-          "x": 480,
-          "y": 288,
-          "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1507,7 +1528,7 @@
         },
         {
           "assetStoreId": "",
-          "name": "NewSprite",
+          "name": "Horse",
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
@@ -1516,7 +1537,7 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "NewSprite",
+              "name": "Horse",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -2041,7 +2062,7 @@
         },
         {
           "assetStoreId": "",
-          "name": "NewSprite2",
+          "name": "Shield",
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
@@ -2050,7 +2071,7 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "NewSprite2",
+              "name": "kaboom",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -2572,6 +2593,18 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "height": 64,
+          "name": "backgroundgrid",
+          "tags": "",
+          "texture": "NewFile-1.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 64,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
         }
       ],
       "events": [],
